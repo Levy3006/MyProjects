@@ -8,15 +8,15 @@
 </head>
 <body>
     <script type="text/javascript">
-    window.alert(" === Bem Vindo ao Sistema De Médias ==== Para começar, digite sua primeira nota e então a segunda. Logo após, você saberá se foi Aprovado ou Reprovado. Não se esqueça de usar a porra do ponto para notas com casas decimais (obs: não use virgula, e apenas digite numeros positivos!). Podemos começar?");
+    window.alert(" === Bem Vindo ao Sistema De Médias ==== Para começar, digite sua primeira nota e então a segunda. Logo após, você saberá se foi Aprovado ou Reprovado. Não se esqueça de usar ponto para notas com casas decimais (obs: não use virgula, e apenas digite numeros positivos!). Podemos começar?");
     var n1 = Number(window.prompt("digite a primeira nota"));
     for(n1>10; n1<0 || n1==""; n1 + 0){
-        window.alert("Qual o seu problema? digite uma nota válida seu ANIMAL!");
+        window.alert("digite uma nota válida!");
         var n1 = Number(window.prompt("digite a primeira nota"));
     }
     var n2 = Number(window.prompt("digite a segunda nota"));
     for(n2>10;n2>10 || n2<0 || n2==""; n2 + 0){
-        window.alert("Qual o seu problema? digite uma nota válida seu ANIMAL");
+        window.alert("Digite uma nota válida!");
         var n2 = Number(window.prompt("digite a segunda nota"));
     }
     var med = ((n1 + n2)/2);
@@ -27,7 +27,7 @@
     }else if( med == 10){
         window.alert("Parabéns! Você foi aprovado com Distinção! Sua media: " + med);
     }else{
-        window.alert("Se você tiver no mínimo 2 neurônios, tenho a absoluta certeza que os dois esão disputando pelo terceiro lugar... Qual foi a parte do 'DIGITE APENAS NÚMEROS POSITIVOS' e 'NÃO USE VIRGULA' que você não entendeu seu animal?")
+        window.alert("DIGITE APENAS NÚMEROS POSITIVOS' e 'NÃO USE VIRGULA!")
     }
     </script>
 </body>
